@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background: #f2f3f5;
+	color: #666;
+	/* min-height: 100%; */
+}
+
+body, button, input, textarea {
+	font: 400 16px 'Inter', sans-serif;
+}
+
+html, body, #root {
+	height: 100%
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+}
