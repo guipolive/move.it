@@ -1,0 +1,16 @@
+.container {
+	height: 100vh;
+	max-width: 992px;
+	margin: 0 auto;
+	padding: 2.5rem 2rem;
+
+	flex-direction: column; /* safari erro */
+}
+
+.container section {
+	flex: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+	gap: 6.25rem; /* safari error */
+	align-content: center;
+}

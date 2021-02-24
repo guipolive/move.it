@@ -1,19 +1,16 @@
-import Head from 'next/head';
+import React, { useEffect } from "react";
+import Router from 'next/router'
 
-import {ExperienceBar} from '../components/ExperienceBar';
+export default function Index() {
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap" rel="stylesheet"></link>
-      </Head>
+	useEffect(() => {
+		const {pathname} = Router
+		if(pathname == '/' ){
+				Router.push('/home')
+		}
+	});
 
-
-      <div className="container" >
-        <ExperienceBar />
-      </div>
-    </>
-  )
+	return(
+		<h1></h1>
+	)
 }

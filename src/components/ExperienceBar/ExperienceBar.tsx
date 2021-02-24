@@ -1,12 +1,14 @@
+import styles from './ExperienceBar.module.css';
+
 export function ExperienceBar() {
 	return(
-		<header className="ExperienceBar" >
+		<header className={styles.ExperienceBar} >
 			<span>0xp</span>
 			<div>
 				<div style={{width: '50%'}} />
 
 				<span 
-					className='ExperienceBar__total-xp'
+					className={styles.ExperienceBar__totalXp}
 					style={{left: '50%'}} 
 				>
 					300xp
