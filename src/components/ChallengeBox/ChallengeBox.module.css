@@ -1,0 +1,115 @@
+.ChallengeBox {
+	height: 100%;
+	
+	background: var(--white);
+	border-radius: 5px;
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+	padding: 1.5rem 2rem;
+
+	display: flex;
+	flex-direction: column; /* safari erro */
+	align-items: center;
+	justify-content: center;
+
+	text-align: center;
+}
+
+.ChallengeBox__notActive {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ChallengeBox strong {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.ChallengeBox p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	line-height: 1.4;
+
+	max-width: 70%;
+	
+	margin-top: 3rem;
+}
+
+.ChallengeBox__notActive p img {
+	margin-bottom: 1rem;
+}
+
+.ChallengeBox__active {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column; /* safari error */
+}
+
+.ChallengeBox__active header {
+	padding: 0 2rem 1.5rem;
+	
+	color: var(--blue);
+	font-weight: 600;
+	font-size: 1.25rem;
+
+	border-bottom: 1px solid var(--gray-line);
+}
+
+.ChallengeBox__active main {
+	flex: 1;
+	display: flex;
+	flex-direction: column; /* safari error */
+	align-items: center;
+	justify-content: center;
+}
+
+.ChallengeBox__active main strong {
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--title);
+
+	margin: 1.5rem 0 1rem;
+}
+
+.ChallengeBox__active main p {
+	line-height: 1.5;
+}
+
+.ChallengeBox__active footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem; /* safari error */
+}
+
+.ChallengeBox__active footer button {
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 0;
+	border-radius: 5px;
+
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 600;
+
+	transition: filter .2s;
+}
+
+.ChallengeBox__active footer button:hover {
+	filter: brightness(0.9);
+}
+
+button.ChallengeBox__active__failedButton {
+	background-color: var(--red);
+}
+button.ChallengeBox__active__succeededButton {
+	background-color: var(--green);
+}

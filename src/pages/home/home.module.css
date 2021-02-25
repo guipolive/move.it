@@ -13,4 +13,6 @@
 	grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
 	gap: 6.25rem; /* safari error */
 	align-content: center;
+
+	margin-top: 8rem;	
 }
