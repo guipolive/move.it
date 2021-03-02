@@ -13,7 +13,7 @@ export function ChallengeBox() {
 	}
 
 	function handleChallengeFailed() {
-		resetChallenge
+		resetChallenge();
 		resetCountdown();
 	}
 

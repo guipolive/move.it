@@ -14,5 +14,12 @@
 	gap: 6.25rem; /* safari error */
 	align-content: center;
 
-	margin-top: 8rem;	
+	margin-top: 8rem;
+}
+
+
+@media (max-width: 650px){
+	.container section {
+		grid-template-columns: 1fr;
+	}
 }

@@ -49,13 +49,15 @@ export function Countdown() {
 				</button>
 			}
 			
-			<button 
-				type="button"
-				className={styles.Countdown__button}
-				onClick={startCountdown}
-			>
-				Iniciar
-			</button>
+			{!isCountdownActive && !hasFinished &&
+				<button 
+					type="button"
+					className={styles.Countdown__button}
+					onClick={startCountdown}
+				>
+					Iniciar
+				</button>
+			}
 
 
 		</div>
